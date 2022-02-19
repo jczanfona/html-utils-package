@@ -1,11 +1,38 @@
 # espanso match file
-# html-utils-package (v2.2.0)
+# html-utils-package (v2.2.1)
 
 matches:
+  - trigger: "::docskel"
+    label: "HTML - document skeleton"
+    replace: |
+      <!DOCTYPE html>
+      <html>
+      
+         <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>$|$</title>
+         </head>
+      
+         <body>
+         </body>
+      
+      </html>
+
   - trigger: "::doctype"
     label: "HTML - doctype"
     replace: >-
       <!DOCTYPE html>
+
+  - trigger: "::html"
+    label: "HTML - html"
+    replace: >-
+      <html>$|$</html>
+
+  - trigger: "::head"
+    label: "HTML - head"
+    replace: >-
+      <head>$|$</head>
 
   - trigger: "::meta-charset"
     label: "HTML - meta-charset"
@@ -42,26 +69,26 @@ matches:
     replace: >-
       <title>$|$</title>
 
-  - trigger: "::div"
-    label: "HTML - div"
+  - trigger: "::script"
+    label: "HTML - script"
     replace: >-
-      <div>$|$</div>
-
-  - trigger: "::html"
-    label: "HTML - html"
+      <script>$|$</script>
+  
+  - trigger: "::js"
+    label: "HTML - javascript"
     replace: >-
-      <html>$|$</html>
-
-  - trigger: "::head"
-    label: "HTML - head"
-    replace: >-
-      <head>$|$</head>
+      <script type="text/javascript" src="$|$"></script>
 
   - trigger: "::body"
     label: "HTML - body"
     replace: >-
       <body>$|$</body>
   
+  - trigger: "::div"
+    label: "HTML - div"
+    replace: >-
+      <div>$|$</div>
+
   - trigger: "::inline-css"
     label: "HTML - inline-css..."
     replace: style="{{element}}:$|$;"
@@ -108,6 +135,11 @@ matches:
     replace: >-
       <p>$|$</p>
 
+  - trigger: "::?"
+    label: "HTML - php"
+    replace: >-
+      <?php $|$ ?>
+
   - trigger: "::i"
     label: "HTML - italic"
     replace: >-
@@ -137,7 +169,7 @@ matches:
     label: "HTML - css"
     replace: >-
       <link rel="stylesheet" type="text/css" href="$|$">
-  
+
   - trigger: "::ol"
     label: "HTML - ordered list"
     replace: |
@@ -179,7 +211,7 @@ matches:
       </select>
 
   - trigger: "::optgroup"
-    label: "HTML - optgroup"
+    label: "HTML - option group"
     replace: |
       <select name="$|$" id="">
          <optgroup label="">
@@ -192,16 +224,6 @@ matches:
     replace: >-
       <option value="$|$"></option>
   
-  - trigger: "::script"
-    label: "HTML - script"
-    replace: >-
-      <script>$|$</script>
-  
-  - trigger: "::js"
-    label: "HTML - javascript"
-    replace: >-
-      <script type="text/javascript" src="$|$"></script>
-
   - trigger: "::form"
     label: "HTML - form"
     replace: >-
@@ -246,20 +268,3 @@ matches:
     label: "HTML - input-file"
     replace: >-
       <input type="file" name="$|$" id="">
-
-  - trigger: "::docskel"
-    label: "HTML - docskel"
-    replace: |
-      <!DOCTYPE html>
-      <html>
-      
-         <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <title>$|$</title>
-         </head>
-      
-         <body>
-         </body>
-      
-      </html>

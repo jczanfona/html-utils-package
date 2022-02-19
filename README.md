@@ -20,20 +20,30 @@ If you already have the package installed and want to update it, just type:
 espanso package update html-utils-package
 ```
 
+# Test
+
+To list the installed packages and their versions, you have to type:
+
+```
+espanso package list
+```
+
 # Preview
 
-You can choose between all of them from the Search-bar:
+You can choose between all of them from the Search-bar filtring by `HTML`:
 
 ![Search-bar](images/search-bar.png)
 
 # Triggers
 
-Here you can see some of them:
+Here you can see part of the content:
 
 | Trigger  | Result |
 | ------------- | ------------- |
 | `::docskel` | Generates an empty document with `utf-8` and `viewport` headers (unindented) |
 | `::doctype` | `<!DOCTYPE html>` |
+| `::html` | `<html></html>` |
+| `::head` | `<head></head>` |
 | `::meta-charset` | `<meta charset="">` |
 | `::meta-utf-8` | `<meta charset="UTF-8">` |
 | `::meta-viewport` | `<meta name="viewport" content="width=device-width, initial-scale=1">` |
@@ -41,25 +51,17 @@ Here you can see some of them:
 | `::meta-desc` | `<meta name="description" content="">` |
 | `::meta-keywords` | `<meta name="keywords" content="">` |
 | `::title` | `<title></title>` |
-| `::div` | `<div></div>` |
-| `::html` | `<html></html>` |
-| `::head` | `<head></head>` |
+| `::script` | `<script></script>` |
 | `::body` | `<body></body>` |
+| `::div` | `<div></div>` |
 | `::a` | `<a href=""></a>` |
+| `::2a` | `<a href="" target="_blank" rel="noopener noreferrer"></a>` |
 | `::br` | `<br>` |
+| `::com` | `<!-- -->` |
 | `::button` | `<button type="button"></button> ` |
 | `::style` | `<style></style>` |
 | `::css` | `<link rel="stylesheet" type="text/css" href="">` |
-| `::script` | `<script></script>` |
-| `::js` | `<script type="text/javascript" src=""></script>` |
-| `::form` | `<form action="" method=""></form>` |
-| `::label` | `<label for=""></label>` |
-| `::input-submit` | `<input type="submit" value="">` |
-| `::input-text` | `<input type="text" name="" id="">` |
-| `::input-password` | `<input type="password" name="" id="">` |
-| `::input-radio` | `<input type="radio" name="" id="" value="">` |
-| `::input-checkbox` | `<input type="checkbox" name="" id="" value="">` |
-| `::input-file` | `<input type="file" name="" id="">` |
+
 
 # Contributions
-If you feel like there's any important tag/snippet missing, feel free to create a Pull Request or open an [Issue](https://github.com/woodenbell/html-utils-package/issues/new).
+If you feel like there's any important tag/snippet missing, feel free to create a Pull Request or open an [Issue](https://github.com/jczanfona/html-utils-package/issues/new).
