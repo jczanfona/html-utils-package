@@ -19,7 +19,6 @@ If you already have the package installed and want to update it, just type:
 ```
 espanso package update html-utils-package
 ```
-
 # Test
 
 To list the installed packages and their versions, you have to type:
@@ -27,10 +26,9 @@ To list the installed packages and their versions, you have to type:
 ```
 espanso package list
 ```
-
 # Preview
 
-You can choose between all of them from the Search-bar filtring by `HTML`:
+You can choose between all of them from the Search-bar filtring by `html`:
 
 ![Search-bar](images/search-bar.png)
 
@@ -44,11 +42,8 @@ Here you can see part of the content:
 | `::doctype` | `<!DOCTYPE html>` |
 | `::html` | `<html></html>` |
 | `::head` | `<head></head>` |
-| `::meta-charset` | `<meta charset="">` |
 | `::meta-utf-8` | `<meta charset="UTF-8">` |
 | `::meta-viewport` | `<meta name="viewport" content="width=device-width, initial-scale=1">` |
-| `::meta-author` | `<meta name="author" content="">` |
-| `::meta-desc` | `<meta name="description" content="">` |
 | `::meta-keywords` | `<meta name="keywords" content="">` |
 | `::title` | `<title></title>` |
 | `::script` | `<script></script>` |
