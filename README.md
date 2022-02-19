@@ -28,7 +28,7 @@ espanso package list
 ```
 # Preview
 
-You can choose between all of them from the Search-bar filtring by `html`:
+You can choose between all of them from the Search-bar filtering by `html`:
 
 ![Search-bar](images/search-bar.png)
 
