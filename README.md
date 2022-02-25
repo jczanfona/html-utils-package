@@ -34,7 +34,7 @@ You can choose between all of them from the Search-bar filtering by `html`:
 
 ## Triggers
 
-Here you can see part of the content:
+Here you can see some of the possibilities:
 
 | Trigger  | Result |
 | ------------- | ------------- |
@@ -42,14 +42,13 @@ Here you can see part of the content:
 | `::meta-utf-8` | `<meta charset="UTF-8">` |
 | `::meta-viewport` | `<meta name="viewport" content="width=device-width, initial-scale=1">` |
 | `::meta-keywords` | `<meta name="keywords" content="">` |
-| `::script` | `<script></script>` |
 | `::div` | `<div></div>` |
 | `::a` | `<a href=""></a>` |
 | `::2a` | `<a href="" target="_blank" rel="noopener noreferrer"></a>` |
 | `::br` | `<br>` |
 | `::com` | `<!-- -->` |
 | `::button` | `<button type="button"></button> ` |
-| `::style` | `<style></style>` |
+| `::td` | `<td></td>` |
 | `::css` | `<link rel="stylesheet" type="text/css" href="">` |
 
 
